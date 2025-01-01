@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.line {
+    width: 90%;
+    height: 4px;
+    background-color: #ffbd59;
+}
+
+.active {
+    border-bottom: 4px solid #ffad31;
+}
+
+body {
+    overflow-x: hidden;
+    user-select: none;
+}
+
+#app {
+    position: relative;
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 57px;
+    background-color: #ffefd6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#header .search {
+    display: flex;
+    align-items: center;
+}
+
+#header .logo a {
+    text-decoration: none;
+    color: #ffad31;
+    font-weight: 540;
+    font-size: 32px;
+    line-height: 57px;
+    padding: 0 16px;
+}
+
+#header .search-bar {
+    display: flex;
+    width: 20vw;
+    height: 36px;
+    padding: 10px 64px 10px 12px;
+    background-color: #fff;
+    border-radius: 64px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#nav {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#nav li {
+    margin: 0 32px;
+    list-style-type: none;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #ffad31;
+    font-size: 32px;
+    font-weight: 540;
+}
+
+#user-section {
+    display: flex;
+}
+
+#user-section li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffad31;
+    list-style-type: none;
+    margin: 0 16px;
+    border-radius: 50%;
+}
+
+#content {
+    position: relative;
+    top: 57px;
+}
+
+#search-position {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-position .filter {
+    display: flex;
+    align-items: center;
+    background-color: #FFAC30;
+    color: #fff;
+    width: 156px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+#search-position .filter img {
+    margin: 0 16px;
+    width: 26px;
+    height: 13px;
+}
+
+#search-position .map {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFAC30;
+    color: #fff;
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.position-bar {
+    margin-top: 16px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.position-input {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.position-input::placeholder {
+    color: #999;
+}
+
+.position-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.position-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+#content .title {
+    margin-top: 16px;
+    text-align: center;
+    color: #ffac30;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 1200px;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 16px); /* 3 items per row */
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    margin-top: 16px;
+    height: 180px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.card-info {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.card-info span {
+    background-color: #f2f2f2;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.card-button {
+    background-color: #ffad30;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.card-button:hover {
+    background-color: #e69a00;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 16px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* 1 item per row */
+    }
+}
+
+#footer {
+    position: relative;
+    top: 57px;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffdeac;
+}
+
+#contact .item {
+    width: 306px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#contact .item span {
+    text-align: center;
+    padding: 8px;
+}
+
+#socials {
+    height: 300px;
+    background-color: #ffce83;
+}
+
+#socials .title {
+    position: relative;
+    top: 32px;
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+#socials .socials-list {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    position: relative;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#socials .socials-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px rgba(105, 105, 105, 0.1);
+    width: 80px;
+    height: 80px;
+}
+
+#socials .socials-list li img {
+    width: 45px;
+    height: 45px;
+}
+
+#socials p {
+    position: relative;
+    top: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% của font-size */
+    letter-spacing: -0.48px;
+}

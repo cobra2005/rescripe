@@ -5,6 +5,10 @@
     font-family: Nunito;
 }
 
+.hover:hover {
+    background-color: #d9d9d9;
+}
+
 .active {
     border-bottom: 4px solid #FFAD31;
 }
@@ -173,4 +177,169 @@ body {
     font-weight: 400;
     line-height: 24px; /* 100% của font-size */
     letter-spacing: -0.48px;
+}
+
+
+.notification-container {
+    display: none;
+    position: fixed;
+    top: 37px;
+    right: 85px;
+    width: 360px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.tab {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #f8f8f8;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #ffcc00;
+    color: white;
+    font-weight: bold;
+}
+
+.content .section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.notification:last-child {
+    border-bottom: none;
+}
+
+.notification img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.notification p strong {
+    color: #000;
+}
+
+.user-info-container {
+    display: none;
+    position: fixed;
+    top: 57px;
+    right: 16px;
+    width: 360px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-card {
+    background: #fffae6;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.user-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-header span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.option i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.option p {
+    font-size: 14px;
+    color: #555;
+    flex-grow: 1;
+}
+
+.option .arrow {
+    font-size: 14px;
+    color: #ff9900;
+    font-weight: bold;
 }

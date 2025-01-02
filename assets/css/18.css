@@ -5,8 +5,38 @@
     font-family: Nunito;
 }
 
+#content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav {
+    width: 292px;
+    height: 1051px;
+    background-color: #FF9900;
+}
+
+#status-list .status {
+    margin-top: 16px;
+    width: 460px;
+    height: 680px;
+    background-color: #FFEFD6;
+}
+
+#status-list .status .avt {
+    border-radius: 50%;
+    margin: 16px;
+}
+
+#user-list {
+    width: 292px;
+    /* height: 1051px; */
+    background-color: #FFCE83;
+}
+
 #footer {
     position: relative;
+    margin-top: 16px;
 }
 
 #contact {

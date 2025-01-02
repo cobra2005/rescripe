@@ -13,7 +13,7 @@
     <body>
         <div id="app">
             <div id="content">
-                <ul style="list-style-type: none;" id="nav">
+                <ul style="list-style-type: none; position: fixed; z-index: 1;" id="nav">
                     <li style="font-size: 50px; font-weight: 700; padding: 12px;">
                         <a style="text-decoration: none; color: #fff;" href="./6.html">
                             Réscripe
@@ -42,7 +42,59 @@
                     </li>
                 </ul>
 
-                <div id="status-list">
+                <ul style="list-style-type: none; position: fixed; z-index: 1; right: 0;" id="user-list">
+                    <li style="text-align: center; font-weight: 600; margin: 16px;">Người bạn có thể quan tâm</li>
+                    <li>
+                        <p style="display: flex; align-items: center; padding: 4px 12px;">
+                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User1.jpg" alt=""> i_am_guy
+                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
+                        </p>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; padding: 4px 12px;">
+                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User2.jpg" alt=""> i_am_fat
+                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
+                        </p>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; padding: 4px 12px;">
+                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User3.jpg" alt=""> i_am_man
+                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
+                        </p>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; padding: 4px 12px;">
+                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User4.jpg" alt=""> i_am_wo
+                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
+                        </p>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; padding: 4px 12px;">
+                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User5.jpg" alt=""> who_am_i
+                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
+                        </p>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; padding: 4px 12px;">
+                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User6.jpg" alt=""> who_am
+                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
+                        </p>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; padding: 4px 12px;">
+                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User1.jpg" alt=""> i_am_guy
+                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
+                        </p>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; padding: 4px 12px;">
+                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User1.jpg" alt=""> i_am_guy
+                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
+                        </p>
+                    </li>
+                </ul>
+
+                <div id="status-list" style="position: relative; left: 50%; transform: translateX(-50%);">
                     <div class="status">
                         <p style="display: flex; align-items: center;">
                             <img class="avt" src="./assets/avt/Avt1.png" alt=""> i_am_guy
@@ -136,58 +188,8 @@
                         <div style="margin-left: 8px; color: #4C525E;">18 tháng 9</div>
                     </div>
                 </div>
-
-                <ul style="list-style-type: none;" id="user-list">
-                    <li style="text-align: center; font-weight: 600; margin: 16px;">Người bạn có thể quan tâm</li>
-                    <li>
-                        <p style="display: flex; align-items: center; padding: 4px 12px;">
-                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User1.jpg" alt=""> i_am_guy
-                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
-                        </p>
-                    </li>
-                    <li>
-                        <p style="display: flex; align-items: center; padding: 4px 12px;">
-                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User2.jpg" alt=""> i_am_fat
-                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
-                        </p>
-                    </li>
-                    <li>
-                        <p style="display: flex; align-items: center; padding: 4px 12px;">
-                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User3.jpg" alt=""> i_am_man
-                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
-                        </p>
-                    </li>
-                    <li>
-                        <p style="display: flex; align-items: center; padding: 4px 12px;">
-                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User4.jpg" alt=""> i_am_wo
-                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
-                        </p>
-                    </li>
-                    <li>
-                        <p style="display: flex; align-items: center; padding: 4px 12px;">
-                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User5.jpg" alt=""> who_am_i
-                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
-                        </p>
-                    </li>
-                    <li>
-                        <p style="display: flex; align-items: center; padding: 4px 12px;">
-                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User6.jpg" alt=""> who_am
-                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
-                        </p>
-                    </li>
-                    <li>
-                        <p style="display: flex; align-items: center; padding: 4px 12px;">
-                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User1.jpg" alt=""> i_am_guy
-                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
-                        </p>
-                    </li>
-                    <li>
-                        <p style="display: flex; align-items: center; padding: 4px 12px;">
-                            <img style="border-radius: 50%; margin-right: 8px;" src="./assets/user/User1.jpg" alt=""> i_am_guy
-                            <button style="position: absolute; right: 16px; background-color: #FF9900; border: none; width: 106px; height: 32px; border-radius: 12px;">Theo dõi</button>
-                        </p>
-                    </li>
-                </ul>
+                
+                
             </div>
 
             <div id="footer">

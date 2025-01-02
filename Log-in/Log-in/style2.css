@@ -1,0 +1,299 @@
+body{
+    background-image: url("background-pattern.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-family: Nunito;
+    display: flex;
+}
+.Text1{
+    position: relative;
+    z-index: 0;
+    padding-top: 150px;
+    padding-left: 165px;
+}
+.Brand{
+    display: flex;
+}
+
+.Benphai{
+    z-index: 0;
+    position: relative;
+}
+.Logo{
+    width: 100%;
+    height: 100%;
+}
+.Text2{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 60px;
+    color: #d9d9d9;
+    padding-left: 10px;
+}
+.Gt1{
+    margin-top: 13px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.Gt2{
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.Gt3{
+    margin-top: 3px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.Dangnhap{
+    width: 451px;
+    height: 450px;
+    margin-top: 11vh;
+    margin-left: 15vw;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.Title1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+form .field{
+    width: 100%;
+    margin-bottom: 45px;
+}
+form .field1{
+    width: 100%;
+}
+form .field.shake{
+    animation: shake 0.3s ease-in-out;
+}
+.com{
+    margin-top: 46px;
+    justify-self: center;
+    display:flex;
+}
+.cachkhac{
+    margin-top: 43px;
+    display: flex;
+    justify-self: center;
+}
+
+.iconic1{
+    margin-left: 35px;
+    height: 57px;
+    width: 57px;
+    display: block;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #eeeeee
+}
+.iconic2{
+    height: 57px;
+    width: 57px;
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    align-content: center;
+    box-shadow: 0px 0px 5px 5px #eeeeee
+}
+
+.iconic{
+    border-radius: 10px;
+    height: 31px;
+    width: 31px;
+    justify-self: center;
+    background-color: #FFFFFF;
+    padding-left: 13px;
+}
+
+.Google{
+    width: 26px;
+    height: 26px;
+    padding-left: 10px;
+} 
+
+.Facebook{
+    width: 26px;
+    height: 26px;
+    padding-left: 15.5px;
+}
+
+.Twitter{
+    width: 26px;
+    height: 26px;
+    padding-left: 15.5px;
+}
+
+.Email{
+    font-size: 20px;
+    background-color: #FFFFFF;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: absolute;
+    z-index: 3;
+    margin-top: 148px;
+    margin-left: 58vw;
+ }
+
+ .Passw{
+    font-size: 20px;
+    background-color: #FFFFFF;
+    z-index: 3;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 58vw;
+ }
+
+@keyframes shake{
+    0%, 100%{
+        margin-left: 0;
+    }
+    20%, 80%{
+        margin-left: -12px;
+    }
+    40%, 60%{
+        margin-left: 12px;
+    }
+}
+
+form .field .error-txt{
+    margin-left: 17px;
+    color: red;
+    margin-top: 5px;
+}
+
+form .field .error{
+    display: none;
+}
+
+form .field.error .error{
+    display: block;
+}
+
+ .input-area1{
+    background-color: #FFFFFF;
+    width: 411px;
+    height: 52px;
+    margin-left: 17px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    margin-bottom: 45px;
+ }
+
+ .input-area2{
+    background-color: #FFFFFF;
+    width: 411px;
+    height: 52px;
+    margin-left: 17px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    margin-bottom: 12px;
+ }
+
+
+ input{
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border: none;
+    width: 320px;
+    height: 50px;
+    margin-left: 10px;
+ }
+
+ .input1{
+    background-color: #FFAD30;
+    border: none;
+    font-size: 32px;
+    font-weight: bold;
+    width: 411px;
+    height: 77.48px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 35px;
+ }
+
+.pass{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFAD30;
+ }
+
+ .pass-link{
+    align-self: self-start;
+    margin-left: 17px;
+    font-size: 20px;
+ }
+
+ ::placeholder{
+    font-size: 18px;
+ }
+
+ .shape{
+    width: 64.65px;
+    height: 1px;
+    background-color: #C4C6C6;
+    margin-top: 15px;
+ }
+
+ .OR{
+    margin-top: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+    color:#D9D9D9;
+ }
+
+ .NewB{
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    padding-top: 10px;
+ }
+
+ .New{
+    align-items: center;
+    color: #FFAD30;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 85px;
+ }
+ .Chuaco{
+    padding-left: 17px;
+    font-size: 20px;
+    margin-bottom: 10px;
+ }
+@media screen and (max-width: 890px){
+    .Gt1, .Gt2, .Gt3{
+        display: none;
+    }
+    body{
+        display:block;
+        justify-content: center;
+    }
+    .Text1{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .Dangnhap{
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .Brand{
+        width: 380px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    }
